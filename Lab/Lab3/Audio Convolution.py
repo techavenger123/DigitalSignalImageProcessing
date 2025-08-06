@@ -3,10 +3,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.signal import convolve
 
-# Load MP3 file
+
 audio = AudioSegment.from_mp3("Audio/Audio1.mp3")
 
-# Convert to mono and extract raw samples
+
 audio = audio.set_channels(1)
 samples = np.array(audio.get_array_of_samples()).astype(np.float32)
 
